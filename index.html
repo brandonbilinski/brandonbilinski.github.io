@@ -1,7 +1,153 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #568;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            display: inline-block;
+        }
+        .container-t,.container-m,.container-b {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 0;
+            padding: 1em;
+        }
+        .container-t {
+            display: flex;
+        }
+        .picture {
+            height: 400px;
+            width: auto;
+            margin-right: 15px;
+        }
+        .pd{
+            max-width: 500px;
+        }
+        .gif {
+            padding-top: 150px;
+        }
+        section {
+            margin: 0.5em 0;
+        }
+        h1, h2 {
+            color: #479;
+        }
+        .about, .resume {
+            padding: 1em;
+            display: inline;
+            text-align: center;
+            margin: 15px;
+            flex: 1;
+        }
+        .poem,.photography {
+            padding: 1em;
+            margin: 15px;
+        }
+        .about, .resume, .contact, .poem, .photography {
+            background-color: #fff;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .writing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact input, .contact textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact button {
+            padding: 0.5em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: rgb(8, 170, 116);
+        }   
+    </style>
+</head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+            <a href="#poem">Poetry</a>
+            <a href="#photography">Photos</a>
+        </nav>
+    </header>
+    <div class="container-t">
+        <section id="about" class="about">
+            <h1>About Me</h1>
+            <img src="embedded\about_me.JPG" alt="Picture of me at Machu Piccu" class="picture">
+            <div class="pd">
+                <p>Hello! I'm Brandon <br> I'm a self-taught code enjoyer utilizing a personal website as another way to diversify my skills. <br> Through this project I hope to be able to showcase my ability to pick up new tech, display some cool projects I'm working on, and splash in some of my photography.</p>
+            </div>
+            <div class="gif">
+                <p>Heres where I'll put a cool 8bit gif that I've created</p>
+            </div>
+        </section>
+        <section id="resume" class="resume">
+            <h2>Resume</h2>
+            <iframe src="C:\Users\15863\Desktop\GitHub\personal_website\embedded\Bilinski_Resume.pdf" width="100%" height="750px" style="border: none;"></iframe>
+        </section>
+    </div>
+    <div class="container-m">
+        <section id="poem" class="poem">
+            <h2>Latest Poem</h2>
+            <div class="writing">
+                <p><em>It feels scary, <br> Closing doors <br> and not having <br> the next one <br> to walk through <br></em></p>
+            </div>
+        </section>
+        <section id="photography" class="photography">
+            <h2>Latest Photos</h2>
+            <img src="embedded\macchupiccu.jpg" alt="Photo of Machu Piccu taken on film" class="picture">
+            <img src="embedded\bwstreet.jpg" alt="Black and White photo of a street in spring time" class="picture">
+            <img src="embedded\summer.jpg" alt="Photo of a dock in summertime with lense flare" class="picture">
+            <img src="embedded/colorpop.jpg" alt="Photo of Seattle's MoPoP taken from the Monorail station" class="picture">
+        </section>
+    </div>
+    <div class="container-b">
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>        
+        </section>
+    </div>
 </body>
 </html>
