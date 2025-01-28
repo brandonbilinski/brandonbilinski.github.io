@@ -12,14 +12,14 @@ body {
     align-items: center;
 }
 .logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    display: inline-block;
+    padding: 20px;
+    background-color: black;
+    border-radius: 50%;
 }
 #header_pic{
-    width:100%;
-    height: auto;
+    display: block;
+    border-radius: 50%;
 }
 .link_holder {
     display: flex;
@@ -79,8 +79,8 @@ body {
         flex-direction: row;
     }
     #header_pic {
-        width: 130%;
-        height: auto;
+        display: block;
+        border-radius: 50%;
     }
     .linkbox {
         display: flex;
