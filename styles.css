@@ -77,10 +77,17 @@ body {
 .project_link input {
     background-color: green;
 }
-
+#cw_b object{
+    display: flex;
+    width: 75%;
+    
+}
 .pdf_for_Brendan{
     width:75%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* .pdf_for_Brendan embed{
     width: 100%;
