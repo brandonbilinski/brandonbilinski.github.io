@@ -77,16 +77,14 @@ body {
 .project_link input {
     background-color: green;
 }
-#cw_b{
-    height: 1000:
-}
+
 .pdf_for_Brendan{
-    width:100%;
+    width:75%;
     height: 100%;
 }
-.pdf_for_Brendan embed{
+/* .pdf_for_Brendan embed{
     width: 100%;
-}
+} */
 .timer-container{
     background: black;
     padding: 20px;
